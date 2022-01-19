@@ -9,24 +9,29 @@
 <body>
     <script>
         var city = prompt();
-        var url=`https://api.openweathermap.org/data/2.5/weather?q=city&appid=98ae09bec9b30e091f3f5bf753d3ab2a`
+        var url="https://api.openweathermap.org/data/2.5/weather?q="+city+"&appid=98ae09bec9b30e091f3f5bf753d3ab2a";
 
         fetch(url)
         .then(function(response){
             return response.json()
             
         })
-        .then(function(json){
-            var city = json.name
+        .then(function(data){
+            var city = data.name
             
-            var temprture = json.main.temp
-            var sky = json.weather[0].description
+            var temprture = data.main.temp
+            var sky = data.weather[0].description
 
 
             console.log(city)
             
             console.log(sky)
             console.log(temprture)
+        })
+
+        .catch(function(err){
+
+            alert("Wrong city name");
         })
     </script>
 </body>
