@@ -9,7 +9,7 @@
 <body>
     <script>
         var city = prompt();
-        var url="https://api.openweathermap.org/data/2.5/weather?q="+city+"&appid=98ae09bec9b30e091f3f5bf753d3ab2a";
+        var url="https://api.openweathermap.org/data/2.5/weather?q="+city+"&appid=98ae09bec9b30e091f3f5bf753d3ab2a&units=metric";
 
         fetch(url)
         .then(function(response){
