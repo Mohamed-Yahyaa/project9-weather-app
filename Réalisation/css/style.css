@@ -55,7 +55,7 @@ body {
 .search .search_input {
     padding: 0 10px;
     width: 550px;
-    caret-color: rgb(240, 240, 240);
+    caret-color: rgb(15, 14, 14);
     transition: width 0.4s linear
 }
 
