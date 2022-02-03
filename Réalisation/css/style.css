@@ -98,13 +98,14 @@ body {
 .temp-details>p>span,
 .grey {
     color: #09090a;
-    font-size: 12px
+    font-size: 15px
 }
 
 .fa {
-    color: #a5a5b1
+    color: #000000
 }
 
 *:focus {
     outline: none
 }
+
